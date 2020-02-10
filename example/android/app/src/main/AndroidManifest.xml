@@ -41,7 +41,7 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
 
-        <provider android:authorities="com.facebook.app.FacebookContentProvider000000000000000"
+        <provider android:authorities="com.facebook.app.FacebookContentProvider183711502946548"
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true"/>
 

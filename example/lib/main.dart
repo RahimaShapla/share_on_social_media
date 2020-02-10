@@ -3,6 +3,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
+import 'package:share/share.dart';
 import 'package:social_share_plugin/social_share_plugin.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -51,8 +52,16 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: <Widget>[
-            Center(
-              child: Text('Running on: $_platformVersion\n'),
+            InkWell(
+              onTap: (){
+                Share.share('check out my website https://appicon.co/', subject: "jssssssssssss");
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(top: 100.0),
+                child: Center(
+                  child: Text('Running on: $_platformVersion\n'),
+                ),
+              ),
             ),
             RaisedButton(
               child: Text('Share to Instagram'),
